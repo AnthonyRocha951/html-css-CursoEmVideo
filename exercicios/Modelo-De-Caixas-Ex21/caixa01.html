@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo De Caixas</title>
+    <style>
+        h1 {
+            background-color: darkgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px; /* largura da borda/espessura da borda */
+            border-style: solid; /* estilo da borda */
+            border-color: darkgreen; /* cor da borda */
+
+            /*border:
+            ordem: largura, estilo e cor.
+
+            EX: border: 10px solid darkgreen;
+            */
+
+
+            padding-top: 10px; /* cima */
+            padding-right: 10px; /* direita */
+            padding-bottom: 10px; /* baixo */
+            padding-left: 10px; /* esquerda */
+
+           /* padding:
+           ordem: cima, direita, baixo, esquerda.
+
+           EX: padding: 10px 10px 10px 10px;
+           */
+            
+                /* sempre em sentido horário */
+
+            margin-top: 20px; /* cima */
+            margin-right: 20px; /* direita */
+            margin-bottom: 40px; /* baixo */
+            margin-left: 20px; /* esquerda */
+
+            outline-width: 5px;  /* uma linha entre a borda e a margin */
+            outline-style: dashed;
+            outline-color: rgb(68, 0, 255);
+
+            /*margin: auto; pra centralizar no meio */
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas incline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
