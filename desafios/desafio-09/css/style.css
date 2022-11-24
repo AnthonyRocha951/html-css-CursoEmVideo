@@ -9,6 +9,10 @@ h1 {
     font-family: Arial;
 }
 
+img {
+    padding: 5px;
+}
+
 .imgs {
     display: flex;
     justify-content: center;
