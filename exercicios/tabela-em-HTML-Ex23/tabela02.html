@@ -22,9 +22,20 @@
       border-collapse: collapse;
     }
 
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgray;
+    }
+
     thead, tfoot {
       background-color: gray;
       color: white;
+    }
+
+    tbody > tr:nth-child(odd) {
+      background-color: rgba(211, 211, 211, 0.432);
     }
 
     tr, td {
@@ -55,14 +66,14 @@
         TR, TD, TH
   -->
 
-  <table>
+  <table> <!--th: titulo da coluna. td: informacao da coluna.-->
     <caption>Populaçao das Unidades Federativas</caption>
     <thead>
       <tr>
-        <th>Posiçao</th>
-        <th>Estado</th>
-        <th>Populaçao</th>
-        <th>% da pop. total</th>
+        <th scope="col">Posiçao</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Populaçao</th>
+        <th scope="col">% da pop. total</th>
       </tr>
     </thead>
 
@@ -131,10 +142,10 @@
 
     <tfoot>
       <tr>
-        <th></th>
-        <th>Total de habitantes</th>
-        <th></th>
-        <th>0000</th>
+        <th scope="row"></th>
+        <th scope="row">Total de habitantes</th>
+        <th scope="row"></th>
+        <th scope="row">0000</th>
       </tr>
     </tfoot>
   </table>
