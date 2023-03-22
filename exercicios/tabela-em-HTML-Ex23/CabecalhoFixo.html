@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tabelas em html</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      position: relative;
+      margin: auto;
+      width: 500px;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgray;
+    }
+
+    thead > tr > th {
+      position: sticky; /* pra fixar o cabecalho da tabela. tem q colocar o (top: 0;) */
+      top: 0;
+      background-color: gray;
+    }
+
+    thead, tfoot {
+      background-color: gray;
+      color: white;
+    }
+
+    tbody > tr:nth-child(odd) {
+      background-color: rgba(211, 211, 211, 0.432);
+    }
+
+    tr, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    th {
+      padding: 10px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <h1>Uso de Tabelas grandes</h1>
+  <!--
+    anatomias para tabelas grandes
+    TABLE
+    CAPTION (legenda da tabela)
+      THEAD
+        TR, TD, TH
+      TBODY
+        TR, TD, TH
+      TFOOT
+        TR, TD, TH
+  -->
+
+  <table> <!--th: titulo da coluna. td: informacao da coluna.-->
+    <caption>Populaçao das Unidades Federativas</caption>
+    <thead>
+      <tr>
+        <th scope="col">Posiçao</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Populaçao</th>
+        <th scope="col">% da pop. total</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>46 024 937</td>
+        <td>22,2%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Minas Gerais</td>
+        <td>20 732 660</td>
+        <td>10,0%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rio de Janeiro</td>
+        <td>16 615 526</td>
+        <td>8,0%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bahia</td>
+        <td>14 659 023</td>
+        <td>7,1%</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Paraná</td>
+        <td>11 835 379</td>
+        <td>5,7%</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rio Grande do Sul</td>
+        <td>11 088 065</td>
+        <td>5,3%</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Pernambuco</td>
+        <td>9 051 113</td>
+        <td>4,4%</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Ceará</td>
+        <td>8 936 431</td>
+        <td>4,3%</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Pará</td>
+        <td>8 442 962</td>
+        <td>4,1%</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Santa Catarina</td>
+        <td>7 762 154</td>
+        <td>3,7%</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>46 024 937</td>
+        <td>22,2%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Minas Gerais</td>
+        <td>20 732 660</td>
+        <td>10,0%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rio de Janeiro</td>
+        <td>16 615 526</td>
+        <td>8,0%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bahia</td>
+        <td>14 659 023</td>
+        <td>7,1%</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Paraná</td>
+        <td>11 835 379</td>
+        <td>5,7%</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rio Grande do Sul</td>
+        <td>11 088 065</td>
+        <td>5,3%</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Pernambuco</td>
+        <td>9 051 113</td>
+        <td>4,4%</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Ceará</td>
+        <td>8 936 431</td>
+        <td>4,3%</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Pará</td>
+        <td>8 442 962</td>
+        <td>4,1%</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Santa Catarina</td>
+        <td>7 762 154</td>
+        <td>3,7%</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>46 024 937</td>
+        <td>22,2%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Minas Gerais</td>
+        <td>20 732 660</td>
+        <td>10,0%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rio de Janeiro</td>
+        <td>16 615 526</td>
+        <td>8,0%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bahia</td>
+        <td>14 659 023</td>
+        <td>7,1%</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Paraná</td>
+        <td>11 835 379</td>
+        <td>5,7%</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rio Grande do Sul</td>
+        <td>11 088 065</td>
+        <td>5,3%</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Pernambuco</td>
+        <td>9 051 113</td>
+        <td>4,4%</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Ceará</td>
+        <td>8 936 431</td>
+        <td>4,3%</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Pará</td>
+        <td>8 442 962</td>
+        <td>4,1%</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Santa Catarina</td>
+        <td>7 762 154</td>
+        <td>3,7%</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td>46 024 937</td>
+        <td>22,2%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Minas Gerais</td>
+        <td>20 732 660</td>
+        <td>10,0%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rio de Janeiro</td>
+        <td>16 615 526</td>
+        <td>8,0%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bahia</td>
+        <td>14 659 023</td>
+        <td>7,1%</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Paraná</td>
+        <td>11 835 379</td>
+        <td>5,7%</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rio Grande do Sul</td>
+        <td>11 088 065</td>
+        <td>5,3%</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Pernambuco</td>
+        <td>9 051 113</td>
+        <td>4,4%</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Ceará</td>
+        <td>8 936 431</td>
+        <td>4,3%</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Pará</td>
+        <td>8 442 962</td>
+        <td>4,1%</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Santa Catarina</td>
+        <td>7 762 154</td>
+        <td>3,7%</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="row"></th>
+        <th scope="row">Total de habitantes</th>
+        <th scope="row"></th>
+        <th scope="row">0000</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Accusamus saepe, est enim reprehenderit eos sit delectus <br> porro? Temporibus velit odio suscipit ut quasi! Earum nihil repellendus tenetur! Vero, libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id qui iure facere non illum tempore, debitis aut quaerat v<br>oluptas obcaecati dolor<br>emque distinctio sapiente dolor nihil delectus, officia hic eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque, minima sequi accusamus quisquam vitae al<br>iquid nobis amet similiqu<br>e eum perferendis? Opt<br>io dignissimos porro consequuntur fuga repudiandae tenetur, eum non<br>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi cupiditate laborum offi<br>cia non pariatur, placeat rei<br>ciendis officiis veritatis reprehenderit esse ratione nesciunt. Inventore <br>odit, illo laudantium neque cum officiis! Lorem ipsum dolor sit amet con<br>sectetur adipisicing elit. Architecto, e<br>xpedita dignissimos! Exe<br>rcitationem totam aut fugit, blanditiis accusamus labore repreh<br>enderit dign<br>issimos tenetur cons<br>equatur nesciunt autem est recusandae dolore q<br>uam quisquam a?</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Accusamus saepe, est enim reprehenderit eos sit delectus <br> porro? Temporibus velit odio suscipit ut quasi! Earum nihil repellendus tenetur! Vero, libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id qui iure facere non illum tempore, debitis aut quaerat v<br>oluptas obcaecati dolor<br>emque distinctio sapiente dolor nihil delectus, officia hic eum! Lorem ipsum dolor sit amet cons<br>ectetur adipisicing elit. Officiis neque, minima sequi accusamus quisquam vitae al<br>iquid nobis amet similiqu<br>e eum perferendis? Opt<br>io dignissimos porro consequuntur fuga repudiandae tenetur, eum non<br>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi cupiditate laborum offi<br>cia non pariatur, placeat reiciendis officiis veritatis reprehenderit esse ratione nesciunt. Inventore <br>odit, illo laudanti<br>um neque cum officiis! Lorem ipsum dolor sit amet con<br>sectetur adipisicing elit. Architecto, e<br>xpedita dignissimos! Exe<br>rcitationem totam aut fugit, blanditiis accusamus labore repreh<br>enderit dignissimos tenetur con<br>sequatur nesciunt autem est recusandae dolore q<br>uam quisquam a?</p>
+
+  
+
+</body>
+</html>
