@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" autocomplete="on" method="POST">
+
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required maxlength="20" placeholder="José Santos" autocomplete="username"> <!--colocar required sempre quando for obrigatorio prencher essa parte do form-->  <!--maxlength="20" colocar no maximo 20 letras-->  <!--placeholder="José Santos" pra sugerir algo no formulario-->   <!--autocomplete="username" pra indentificar que tipo de form é esse-->
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required  minlength="8" autocomplete="new-password"> <!--minlength="8" pra ser obrigatorio colocar no minimo 8 letras-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
