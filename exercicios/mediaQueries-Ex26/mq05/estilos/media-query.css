@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    menu li a {
+        background-color: #575757;
+        padding: 10px;
+        margin-right: 5px;
+        color: white;
+        border-top: 2px solid gray;
+        text-decoration: none;
+        transition: .5s;
+    }
+    
+    menu li a:hover {
+        background-color: gray;
+        transition: .5s;
+    }
+
+    main {
+        width: 768px;
+    }
+
+}
